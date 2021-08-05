@@ -1,0 +1,28 @@
+
+<table *ngFor='let producto of productList ' class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Provedor</th>
+        <th scope="col">Imagen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{producto.id}}</td>
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.provedor}}</td>
+        <td>{{producto.img}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+<button [routerLink]="['/detalle']">Detalle</button>
+<div style="background-color: chocolate;">
+    <app-detalle-componente></app-detalle-componente>
+</div>
+
